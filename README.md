@@ -9,3 +9,8 @@
     python3 -m unittest -v
 
 [数据约定](DATA.md)解释输入时序、坐标及数值口径。
+
+合成设备页流可在临时目录生成。默认资料包含两版 8192 条短语，维数 519 和 48 个查询。
+
+    python3 generate_replay.py /tmp/phrase-pages
+    python3 records.py /tmp/phrase-pages/manifest.json
